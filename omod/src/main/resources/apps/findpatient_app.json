@@ -10,7 +10,7 @@
                 "extensionPointId": "org.openmrs.referenceapplication.homepageLink",
                 "type": "link",
                 "label": "coreapps.findPatient.app.label",
-                "url": "spa/patient-search",
+                "url": "coreapps/findpatient/findPatient.page?app=coreapps.findPatient",
                 "icon": "icon-search",
                 "requiredPrivilege": "App: coreapps.findPatient"
             }

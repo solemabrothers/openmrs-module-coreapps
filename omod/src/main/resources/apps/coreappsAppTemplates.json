@@ -59,6 +59,43 @@
         ]
     },
     {
+        "id": "coreapps.template.findspaPatient",
+        "description": "Basic patient search by ID or Name (using OpenMRS's standard patient search)",
+        "contextModel": [ "patientId" ],
+        "configOptions": [
+            {
+                "name": "afterSelectedUrl",
+                "description": "URL to go to after the user selects a patient. Supports {{patientId}}",
+                "defaultValue": "/coreapps/clinicianfacing/patient.page?patientId={{ patientId }}"
+            },
+            {
+                "name": "label",
+                "description": "Label used by the find patient widget",
+                "defaultValue": "coreapps.findPatient.app.label"
+            },
+            {
+                "name": "heading",
+                "description": "Heading used by the find patient widget",
+                "defaultValue": "coreapps.findPatient.app.label"
+            },
+            {
+                "name": "showLastViewedPatients",
+                "description": "Whether or not to show a list of the recently-viewed patients for the current user",
+                "defaultValue": true
+            },
+            {
+                "name": "breadcrumbs",
+                "description": "If specified, list of breadcrumbs for this page. (\"label\" will be translated, \"link\" will have /CONTEXTPATH prepended.) If not specified, default breadcrumbs are Home -> translate(label).",
+                "defaultValue": null
+            },
+            {
+                "name": "registrationAppLink",
+                "description": "Link to the registration app to be used, the default value of blank hides the registration button on the search widget and other pages. This link should not include the context path as this is added",
+                "defaultValue":  ""
+            }
+        ]
+    },
+    {
         "id": "coreapps.template.relationships",
         "description": "Lists relationships, and lets you edit them",
         "configOptions": [
